@@ -14,10 +14,9 @@ SearchView is a Android widget, that is capable of providing tools to searcha gi
 
 ## History
 
-## Major Methods/Attriburtes
+## Major Methods/Attributes
 
 ## Example Project Code
 
 ## References
-
 
