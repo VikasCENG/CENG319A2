@@ -14,7 +14,7 @@ SearchView is a Android widget, that is capable of providing tools to search for
 
 ## History
 
-SearchView was introduced in API 11 of the Android system. The package library it mainly consisted of was the AppCompat library, with backwards configuration back to Android 2.1. 
+SearchView was introduced in API 11 of the Android system. The package library it mainly consisted of was the AppCompatActivity library, with backwards configuration back to Android 2.1. 
 
 ## Major Methods/Attributes
 
