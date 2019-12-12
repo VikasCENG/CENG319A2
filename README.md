@@ -21,6 +21,15 @@ SearchView was introduced in API 11 of the Android system. The package library i
 The major methods that are needed to use this widget are the following: 
 - public boolean onQueryTextSubmit(String query)
 - public boolean onQueryTextChange(String text)
+- public int getImeOptions()
+- public int getInputType()
+- public CharSequence getQuery()
+- public CharSequence getQueryHint()
+- public CursorAdapter getSuggestionsAdapter()
+- public boolean isIconified()
+- public bolean 
+
+
 
 So, onQueryTextSubmit is used to search a query based on waht the usertypes into the searchbar at the time of the submission. While, onQueryTextChaneg provides real-time updates of the user selections as they are typed into the searchbar layout. It basically searches the query, and automatically changes context if the user types a new letter, and as they enter new desired results, the searchview changes to the expected results from the query.
 
