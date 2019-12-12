@@ -23,8 +23,8 @@ The major methods that are needed to use this widget are the following:
 - public boolean onQueryTextChange(String text)
 - public int getImeOptions()
 - public int getInputType()
-- public CharSequence getQuery()
-- public CharSequence getQueryHint()
+- public CharSequence getQuery(): get the current query that is entered from the user in the SearchView, which is of string value
+- public CharSequence getQueryHint(): dislays a hint for possible desired results the user may be wanting to search for
 - public CursorAdapter getSuggestionsAdapter()
 - public boolean isIconified()
 - public boolean setIconifiedByDefault(true): this is when the searchbar is used as a ActionBar, to view as a action view. It provides the option of collapsing/expanding the view by changing the boolean value of this method to (true), and vice-versa for a fixed view of the searchview at all times.
@@ -36,6 +36,15 @@ The major methods that are needed to use this widget are the following:
 
 
 So, onQueryTextSubmit is used to search a query based on waht the usertypes into the searchbar at the time of the submission. While, onQueryTextChange provides real-time updates of the user selections as they are typed into the searchbar layout. It basically searches the query, and automatically changes context if the user types a new letter, and as they enter new desired results, the searchview changes to the expected results from the query.
+
+### Attributes
+
+- Id: this is sused to identify a SearchView to be used later on for other purposes.
+- queryHint - this sets a query hint using a String, in the SearchView.
+- iconifiedByDefault - sets a true(expandable view for the view) or, default state where the the SearchView is visible at all times.
+- background - this can be used to set a specific background color for the SearchView, or image.
+- padding - allows the View to be constrained and be put in the center,or any where on the screen. Ideally, it should be placed on the top of a Toolbar.
+
 
 ## Example Project Code
 
