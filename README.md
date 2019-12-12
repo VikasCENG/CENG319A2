@@ -27,11 +27,15 @@ The major methods that are needed to use this widget are the following:
 - public CharSequence getQueryHint()
 - public CursorAdapter getSuggestionsAdapter()
 - public boolean isIconified()
-- public bolean 
+- public boolean setIconifiedByDefault(true): this is when the searchbar is used as a ActionBar, to view as a action view. It provides the option of collapsing/expanding the view by changing the boolean value of this method to (true), and vice-versa for a fixed view of the searchview at all times.
+- setOnSuggestionListener(SearchView.OnSuggestionListener listener) : this acknowledges when a suggestion is focused or clicked by the user, that opos up while the user is is typying or their is detection of inactivity on the view itself.
+- setOnCloseListener : this sets a listener to be informed when the user closes the SearchView or the view is collapsed.
+- setOnQueryTextFocusChangeListener(View.OnFocusChangeListner listner): this detects when the focus/context of the query changes in the searchbar or the user types in something new.
+- setOnQueryTextListener : sets a listner for actions the user takes while using the view.
+- setOnSearchClickListener: the view sets up a listener to be informaed when the "Search" button is pressed 
 
 
-
-So, onQueryTextSubmit is used to search a query based on waht the usertypes into the searchbar at the time of the submission. While, onQueryTextChaneg provides real-time updates of the user selections as they are typed into the searchbar layout. It basically searches the query, and automatically changes context if the user types a new letter, and as they enter new desired results, the searchview changes to the expected results from the query.
+So, onQueryTextSubmit is used to search a query based on waht the usertypes into the searchbar at the time of the submission. While, onQueryTextChange provides real-time updates of the user selections as they are typed into the searchbar layout. It basically searches the query, and automatically changes context if the user types a new letter, and as they enter new desired results, the searchview changes to the expected results from the query.
 
 ## Example Project Code
 
